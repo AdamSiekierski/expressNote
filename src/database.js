@@ -5,6 +5,8 @@ const Database = {
     async sendQuery(query, stringify = Boolean) {
         let queryResults;
 
+        console.log('Sending a database query');
+
         await mysql.createConnection(databaseCredits)
         .then(async (conn) => {
             let result = await conn.query(query);

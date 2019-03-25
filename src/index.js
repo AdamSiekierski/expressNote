@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.disable('x-powered-by');
 
-app.use('/api', router);
+app.use('/', router);
 
 app.listen(port, () => {
    cConsoleLog('Magenta', `Listening on port ${port}`);
