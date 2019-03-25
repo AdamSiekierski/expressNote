@@ -14,7 +14,8 @@
     "promise-mysql": "^3.3.1"
   },
   "scripts": {
-    "serve": "nodemon -r esm src/index.js"
+    "serve": "nodemon -r esm src/index.js",
+    "start": "node -r esm src/index.js"
   },
   "devDependencies": {
     "jest": "^24.5.0"
