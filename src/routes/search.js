@@ -15,7 +15,7 @@ router.get('/',(req, res) => {
 
     Database.sendQuery(`SELECT * FROM notes WHERE ${createSqlParams(whitelistedQuery)}`, true).then((response) => {
         if (response === '[]') {
-            res.status(404).send({
+            res.status(200).send({
                 message: `Didn't find any note at given search parameters`
             })
         } else {
