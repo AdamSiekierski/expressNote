@@ -1,5 +1,5 @@
 import express from 'express'
-import {body, validationResult} from 'express-validator'
+import {body, validationResult} from 'express-validator/check'
 import Database from '../database'
 const router = express.Router();
 
