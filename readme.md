@@ -1,5 +1,4 @@
 # expressNote
-Project  made for learning REST API's. Made with Express.js and MySQL database. 
 ### Run
 - Install all dependencies
 ```
